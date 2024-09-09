@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Times New Roman;
+    line-height: 1.6;
+    color: #000; /* Changed to black */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* General Section Styles */
+section h2 {
+    color: #000; /* Default color for all section headings */
+}
+
+/* Specific Colors for Different Sections */
+.contact-info h2 {
+    color: #003366; /* Change color for Contact Information */
+}
+
+.skills h2 {
+    color: #003366; /* Change color for Skills */
+}
+
+.experience h2 {
+    color: #003366; /* Change color for Professional Experience */
+}
+
+.education h2 {
+    color: #003366; /* Change color for Education */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #003366; /* Blue background */
+    color: #fff; /* White text */
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+}
+
+/* Adjust the profile section to fit within the blue header */
+.profile {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff; /* White border for contrast */
+}
+
+.info {
+    flex: 5;
+}
+
+header h1 {
+    color: #fff; /* White text */
+    font-size: 2.5em;
+    margin-bottom: 1 em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff; /* White text */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #000; /* Changed to black */
+    border-bottom: 2px solid #000; /* Changed to black */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    margin-bottom: 20px; /* Add space below the contact info section */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info-left {
+    flex: 1; /* Allows this section to take up space on the left */
+}
+
+.social-media {
+    flex: 1; /* Allows this section to take up space on the right */
+    text-align: right; /* Aligns text to the right */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #000; /* Changed to black */
+}
+
+.contact-info a {
+    color: #000; /* Changed to black */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media p {
+    margin: 5px 0; /* Ensures margin consistency for social media links */
+}
+
+.social-media {
+    flex: 1;
+    text-align: right;
+}
+
+.social-media p {
+    margin: 5px 0;
+}
+
+
+//* Skills List Styles */
+.skills {
+    margin-bottom: 20px; /* Add space below the skills section */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-skills, .right-skills {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+    margin: 0;
+    width: -100%; /* Each container takes up half the width */
+}
+
+.left-skills {
+    /* Additional styling if needed */
+}
+
+.right-skills {
+    text-align: right; /* Align text to the right */
+}
+
+.left-skills li, .right-skills li {
+    margin-bottom: 10px;
+    color: #000; /* Changed to black */
+    position: relative;
+    padding-left: 20px; /* Space for the bullet */
+}
+
+.left-skills li::before, .right-skills li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #000; /* Changed to black */
+    border-radius: 2px; /* Small square bullet */
+    transform: translateY(-50%);
+}
+}
+
+/* Experience and Education Styles */
+.job, .degree {
+    margin-bottom: 15px;
+}
+
+.job h3, .degree h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #000; /* Changed to black */
+}
+
+.job p, .degree p {
+    color: #000; /* Changed to black */
+    margin-bottom: 10px;
+}
+
+.job ul, .degree ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.job li, .degree li {
+    margin-bottom: 5px;
+    color: #000; /* Changed to black */
+    position: relative;
+    padding-left: 20px; /* Space for the bullet */
+}
+
+.job li::before, .degree li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #000; /* Changed to black */
+    border-radius: 2px; /* Small square bullet */
+    transform: translateY(-50%);
+}
